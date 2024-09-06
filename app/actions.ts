@@ -27,7 +27,7 @@ export async function CreateSiteAction(prevState: any, formData: FormData) {
   ]);
 
   if (!subStatus || subStatus.status !== "active") {
-    if (sites.length < 1) {
+    if (sites.length < 5) {
       const submission = await parseWithZod(formData, {
         schema: SiteCreationSchema({
           async isSubdirectoryUnique() {
