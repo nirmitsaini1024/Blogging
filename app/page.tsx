@@ -6,7 +6,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { Hero } from "./components/frontend/Hero";
-import { Logos } from "./components/frontend/Logos";
+
 import { Features } from "./components/frontend/Features";
 import { PricingTable } from "./components/shared/Pricing";
 import { redirect } from "next/navigation";
