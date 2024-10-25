@@ -52,10 +52,10 @@ export default async function SitesRoute() {
             <FileIcon className="size-10 text-primary" />
           </div>
           <h2 className="mt-6 text-xl font-semibold">
-            You don't have any sites created.
+            You don&apost have any sites created.
           </h2>
           <p className="mb-8 mt-2 text-center text-sm leading-tight text-muted-foreground max-w-sm mx-auto">
-            You don't have any sites currently. Please create them to see here.
+            You don&apost have any sites currently. Please create them to see here.
           </p>
           <Button asChild>
             <Link href={"/dashboard/sites/new"}>

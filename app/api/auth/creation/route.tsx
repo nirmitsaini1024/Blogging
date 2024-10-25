@@ -30,6 +30,8 @@ export async function GET() {
   }
 
   return NextResponse.redirect(
-    "http://localhost:3000/dashboard"
+    process.env.NODE_ENV === "production"
+      ? "https://blog.10xdevs.in/dashboard"
+      : "http://localhost:3000/dashboard"
   );
 }

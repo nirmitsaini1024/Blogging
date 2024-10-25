@@ -5,7 +5,7 @@ import { parseWithZod } from "@conform-to/zod";
 import { PostSchema, SiteCreationSchema, siteSchema } from "./utils/zodSchemas";
 import prisma from "./utils/db";
 import { requireUser } from "./utils/requireUser";
-// import { stripe } from "./utils/stripe";
+import { stripe } from "./utils/stripe";
 
 export async function CreateSiteAction(prevState: any, formData: FormData) {
   const user = await requireUser();
@@ -226,11 +226,11 @@ export async function CreateSubscription() {
     },
     success_url:
       process.env.NODE_ENV === "production"
-        ? ""
+        ? "htts://blog.10xdevs.in/dashboard/payment/success"
         : "http://localhost:3000/dashboard/payment/success",
     cancel_url:
       process.env.NODE_ENV === "production"
-        ? ""
+        ? "htts://blog.10xdevs.in/dashboard/payment/cancelled"
         : "http://localhost:3000/dashboard/payment/cancelled",
   });
 

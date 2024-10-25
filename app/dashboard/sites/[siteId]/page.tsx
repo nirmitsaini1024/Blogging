@@ -1,4 +1,5 @@
 // import { EmptyState } from "@/app/components/dashboard/EmptyState";
+import { EmptyState } from "@/app/components/dashboard/EmptyState";
 import prisma from "@/app/utils/db";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -38,23 +39,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 async function getData(userId: string, siteId: string) {
-  /* const data = await prisma.post.findMany({
-    where: {
-      id: siteId,
-      userId: userId,
-    },
-    select: {
-      image: true,
-      title: true,
-      createdAt: true,
-      id: true,
-      Site: {
-        select: {
-          subdirectory: true,
-        },
-      },
-    },
-  }); */
+
 
   const data = await prisma.site.findUnique({
     where: {

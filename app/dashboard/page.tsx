@@ -113,7 +113,7 @@ export default async function DashboardIndexPage() {
         </div>
       ) : (
         <EmptyState
-          title="You dont have any articles created"
+          title=""
           description="Your currently dont have any articles created. Please create some so that you can see them right here"
           buttonText="Create Article"
           href="/dashboard/sites"

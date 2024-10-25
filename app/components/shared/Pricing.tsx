@@ -26,7 +26,7 @@ export const PricingPlans: iAppProps[] = [
     cardTitle: "Freelancer",
     cardDescription: "The best pricing plan for people starting out.",
     benefits: [
-      "1 Site",
+      "3 Site",
       "Up to 1000 Visitors",
       "Up to 1000 Visitors",
       "Up to 1000 Visitors",
@@ -57,10 +57,10 @@ export function PricingTable() {
         </h1>
       </div>
 
-      <p className="mx-auto mt-6 max-w-2xl text-center leading-tight text-muted-foreground">
+      {/* <p className="mx-auto mt-6 max-w-2xl text-center leading-tight text-muted-foreground">
         Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi
         iusto modi velit ut non voluptas in. Explicabo id ut laborum.
-      </p>
+      </p> */}
 
       <div className="grid grid-cols-1 gap-8 mt-16 lg:grid-cols-2">
         {PricingPlans.map((item) => (
